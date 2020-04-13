@@ -24,6 +24,7 @@ typedef struct
 #define ORGANISM_LOCATIONS {{18, 86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}}
 #define LENGTH 5
 #define MAX_DISTANCE 1000000.00
+#define FOR(start, limit) for (int i = start; i < limit; i++)
 
 double distance_of_points(Point point1, Point point2);
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
