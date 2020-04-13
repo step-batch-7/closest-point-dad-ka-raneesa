@@ -2,9 +2,9 @@
 
 int main(void)
 {
-  struct Point food_points[LENGTH] = FOOD_POINTS;
-  struct Point organism_locations[LENGTH] = ORGANISM_LOCATIONS;
-  struct Point closest_food_location = {0, 0};
+  Point food_points[LENGTH] = FOOD_POINTS;
+  Point organism_locations[LENGTH] = ORGANISM_LOCATIONS;
+  Point closest_food_location = {0, 0};
 
   for (int i = 0; i < LENGTH; i++)
   {
