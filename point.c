@@ -3,9 +3,9 @@
 
 double distance_of_points(Point point1, Point point2)
 {
-  int x = pow(point1.x - point2.x, 2);
-  int y = pow(point1.y - point2.y, 2);
-  return sqrt(x + y);
+  int diff_x = point1.x - point2.x;
+  int diff_y = point1.y - point2.y;
+  return hypot(diff_x, diff_y);
 }
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location)
