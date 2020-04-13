@@ -10,8 +10,9 @@ double distance_of_points(Point point1, Point point2)
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location)
 {
-  double distance = MAX_DISTANCE;
-  FOR(0, points_length)
+  double distance = distance_of_points(current_location, food_points[0]);
+  *closest_food_location = food_points[0];
+  FOR(1, points_length)
   {
     double distance_to_current_food = distance_of_points(current_location, food_points[i]);
     if (distance > distance_to_current_food)

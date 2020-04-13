@@ -23,7 +23,6 @@ typedef struct
 #define FOOD_POINTS {{18, 76}, {19, 66}, {89, 57}, {9, 71}, {55, 38}}
 #define ORGANISM_LOCATIONS {{18, 86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}}
 #define LENGTH 5
-#define MAX_DISTANCE 1000000.00
 #define FOR(start, limit) for (int i = start; i < limit; i++)
 
 double distance_of_points(Point point1, Point point2);
