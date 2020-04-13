@@ -20,5 +20,9 @@ struct Point
   int y;
 };
 
+#define FOOD_POINTS {{18, 76}, {19, 66}, {89, 57}, {9, 71}, {55, 38}}
+#define ORGANISM_LOCATIONS {{18, 86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}}
+#define LENGTH 5
+
 double distance_of_points(struct Point point1, struct Point point2);
 void get_closest_food(struct Point food_points[], int points_length, struct Point current_location, struct Point *closest_food_location);
