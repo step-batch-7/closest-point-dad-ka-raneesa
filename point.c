@@ -3,7 +3,9 @@
 
 double distance_of_points(struct Point point1, struct Point point2)
 {
-  return 0;
+  int x = pow(point1.x - point2.x, 2);
+  int y = pow(point1.y - point2.y, 2);
+  return sqrt(x + y);
 }
 
 void get_closest_food(struct Point food_points[], int points_length, struct Point current_location, struct Point *closest_food_location)
